@@ -3,7 +3,8 @@
 int main(void){
 
     int acum1, acum2, acum3, acum4, contador, cantidadPuntos, acumEjeX, acumEjeY;
-    int x, y;
+    int x, y; /*Cuando declaro estas variables como float, el programa no sirve. No entiendo muy bien el porqué
+                de este problema*/
 
     contador = 1;
     acum1 = 0;
@@ -32,7 +33,9 @@ int main(void){
             scanf("%d", &y);
         }
 
-
+/*Tengo la sensación que el problema está aquí. Porque cuando las variables "x" y "y" son de tipo float pareciera que no entra en los if's
+  y los acumuladores no funcionan*/
+  
         if(x >= 0 && y > 0){
             if(x == 0)
                 ++acumEjeY; //coordenada en Oy
